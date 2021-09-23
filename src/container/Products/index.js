@@ -94,10 +94,9 @@ console.log(productPicture)
         <select className="form-control"
         value={categoryId}
          onChange={(e)=>setCategoryId(e.target.value)}>
-            <option>Select Category </option>
+            <option>select category </option>
             {createCategoryList(category.categories).map(option=>
             <option key={option.value} value={option.value}>{option.name}</option>)}
-
         </select>
         {
           productPicture.length > 0 ? 
